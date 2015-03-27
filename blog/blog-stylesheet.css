@@ -1,0 +1,22 @@
+h1 {
+  text-align:center;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-top:10px;
+  position: static;
+}
+
+h4 {
+  tex-align: center;
+  margin-top: 10px;
+  margin-left: 665px;
+  position: static;
+}
+
+section {
+  text-align: center;
+  display: block;
+}
