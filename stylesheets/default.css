@@ -3,11 +3,13 @@
 }
 
 .two {
+  border: 1px solid black;
   margin-left: 250px;
   margin-right: 250px;
 }
 
 .three {
+  border: 1px solid black;
   margin-left: 600px;
   display: inline-block;
 }
