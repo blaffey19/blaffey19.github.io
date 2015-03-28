@@ -20,3 +20,9 @@ section {
   text-align: center;
   display: block;
 }
+
+html {
+  background-color: beige;
+  font-family: Courier;
+  color: aqua;
+}
