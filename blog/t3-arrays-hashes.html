@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>My DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<main>
+  <h1>Arrays vs. Hashes</h1>
+  <h2>Should you use an array? Or perhaps a hash?</h2>
+  <h4>April 3rd, 2015</h4>
+
+  <section>
+    Arrays. Hashes. They may not sound similar phonetically, but these two Ruby indexes are actually quite similar. What mainly differentiates them is the style in which the items are indexed in each one. In an array, you only need one line to create it, and list all of it's elements. Elements are the content of an array. An array looks like this:
+    food = ['cheeseburger', 'pizza', 'sushi'] Here, the array's name is food. The three elements inside the array are 'cheeseburger', 'pizza', and 'sushi'. Each of these elements is given a "key". This also applies to hashes, but this is really what the major difference is between the two of them. In arrays, the keys for the elements are just integers, and in arrays, the keys are assigned in the order that you enter the elements, by default. Thus, 'cheeseburger' would have a key of 0(because that's how you count in programming language), 'pizza' would have a key of 1, and 'sushi' would have the key 2. To access an element in an array, you would call it by it's integer. Thus, to access 'cheeseburger', you would enter: food[0]. Entering 'food' tells Ruby which array you want it to open, and entering [0] tells it that you want the first element listed inside it, which here is 'cheeseburger'. Now, with hashes, instead of assigning each element with an integer, you create the keys to each value yourself. For example: food = {'American' => 'cheeseburger'
+                                   'Italian' => 'pizza'
+                                   'Asian' => 'sushi' }.
+    As you can see, there are some differences here. To structure a hash, you use curly brackets instead of the square ones. You also use the '=>' to assign each key to it's element, or value. So, the keys are on the left, and their values are on the right. As opposed to arrays, which have integers as keys, you name each key when making a hash. Alas, there is no numerical order of a hash's elements, as opposed to an array. To access a specific value with a hash, you would do: food['American'] to get to 'cheeseburger'. Almost the same access method as in arrays, just with using the key you assigned to the value, instead of using the integer of the value with arrays. You could use an array to make a list of things that have to be in a certain order, like a to do list. You would use a hash to make something like say, a phonebook, or to classify items in.
+
+
+
+  </section>
+</main>
+
