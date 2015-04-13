@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <title>My DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<main>
+  <h1>When in Doubt, map it Out!</h1>
+  <h2>The Extremely Useful Enumerable Method Known as map</h2>
+  <h4>April 12th, 2015</h4>
+
+  <section>
+In Ruby, anytime you are dealing with a collection of something(this could be an array, hash, set, range, etc.) there is a module full of methods that is defaulted in for you to use. This is called the enumerable module. And, one of the more famous and most widely used enumerable methods is the map method. No, sadly the map method doesn't draw you a cool little treasure map(where's the update for that Ruby??) What it does do, however, is very, very useful. The map method will essentially select every element in your collection-an array, persay-and apply whatever value you give the map to each and every element inside the array. For example, let's say that for some reason you wanted to multiply each number in an array by 2. Well, couldn't you just do something like this? # "[1,2,3,4] * 2" ? Unfortunately, you can't. Ruby just doesn't work like that. That would actually just multiply the entire array of numbers, twice. Like this: [1,2,3,4] * 2
+=> [1, 2, 3, 4, 1, 2, 3, 4]. Hmm, shoot. Sorry pal :(. But wait! You can implement the map method. Like such: [1,2,3,4].map {|x| x * 2}
+=> [2, 4, 6, 8]
+Now that's more like it! Let me explain what's going on here. First we have our array of numbers, nothing special there. But then, we have our map method being used. When we put a . before the map, we are telling Ruby what we want to get "mapped", so to speak. In this case, it is our array. The next algebra-ish looking code is what we are telling the map method to map with. We are giving map a value. The first x is just a placeholder for the numbers in the array. You could use a, j, w, whatever. The next part there, where we are multiplying, is telling the map what we want it to do to each element in the array-in this case, multiply by 2. So, x represents each number inside the array, and we're telling map to multiply x by 2. Then we have the desired results! I hope this made sense to those reading this that have no experience with Ruby, I explained it the best I could, I promise!
+
+
+  </section>
+</main>
+
