@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>My DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<main>
+  <h1>Class is in Session!</h1>
+  <h2>A quick look at Ruby classes</h2>
+  <h4>April 19th, 2015</h4>
+
+  <section>
+    For this technical blog post, I have been asked to write about something that is hugely, hugely important in the world of ruby programming: classes. A ruby class is creating a new object in ruby, which has it's own unique variables and methods in it, and this class can then be utilized to whatever the creator designed it for. Since classes often always have multiple methods inside of them, there is a very useful tool to implement so that you can plug in the same variable throughout the class and it's methods. These are called instance variables, and they are denoted with an '@'. Here's an example of an instance variable: @blue = blue. You will usually assign these kinds of variables in the first method of your class, which is typically the method 'initialize'. The initialize method basically lays the foundation for the entire class, and this will be the method that takes input. When the proper input is given, the class's function will be initialized, hence the name. So, say you were making a class that dealt with colors and shapes, for whatever reason. The initialize method would probably look something like this:</section>
+
+    <p> def initialize(color, shape)</p>
+      <p>@color = color</p>
+      <p>@shape = shape</p>
+      <p>end</p>
+
+    <section>
+      So, what's going on here? Well, we have our definition of our method initialize, and we allowed it to take input as color, and shape. This is what the class will look for when you are trying to use it so that it can be initialized. Next, we have assigned instance variables to color and shape, as we have to convert the input into instance variables so that they can be used throughout the class. So, if we had another method in this class, and we wanted to plug in color or shape, we would type them into the syntax as @color or @shape, so the class knows what the heck you're talking about. Well, enough jibber jabber, how about I just show you a class(albeit a very simple one for the sake of this post):</section>
+
+      <p>class RecipeHelp</p>
+
+          <p>def initialize(quantity, measurement, ingredient)</p>
+            <p>@quantity = quantity</p>
+            <p>@measurement = measurement</p>
+            <p>@ingredient = ingredient</p>
+          <p>end</p>
+
+          <p>def display</p>
+            <p>puts "For this part of the recipe, you are going to</p> <p>need #{@quanity} #{@measurement} of #{@ingredient}."</p>
+          <p>end</p>
+        <p>end</p>
+
+      <section> I decided to write up a simple little class called 'RecipeHelp' that will tell you how much of an ingredient you need through steps of a recipe. In our initialize method, I wrote it to take three elements as input, quantity, which would be in integer form, measurement, which you could enter as pounds, cups, ounces, teaspoons, etc., and ingredient, which, should be self explanatory. Next, I assigned the three forms of input to instance variables. You'll see why in the next method. In display, I wrote a simple string that the class will print to the reader, and those three # and {} thingys? That's where I'm telling the class to insert the three inputs, in that order, all the time. If we didn't use the instance variables there, we would get errors telling us that quantity, measurement, and ingredient are undefined, because they are coming from a different method in the class. That's the brilliance of instance variables!</section>
+
+
+
+</main>
