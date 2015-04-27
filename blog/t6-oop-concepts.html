@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <title>My DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<main>
+  <h1>Putting Variables under the Scope</h1>
+  <h2>Variable Scope at a Glance</h2>
+  <h4>April 26th, 2015</h4>
+
+  <section>
+    In Ruby, variable scope is an incredibly important and powerful concept. It kind of makes layers on layers, and you are given different tools for each layer to use. These are the various variables that you can find in the Ruby language:</section>
+
+    <ul>
+      <li> Global Variables, syntax: $global_variable
+        <p> You can think of global variables as the President: they have all access, and can show up anywhere they please, at anytime in any part of Ruby. You will know if you've come across a mighty global variable if you see a variable that begins with a ($) dollar sign. They have no limits or boundaries, they can be accessed literally all over the Ruby world. Because they are so powerful, it is not encouraged to use global variables in your code. This is because of the fact that they are incredibly accessible, and that makes them very transparent and vulnerable to other variables, methods, and such. You do NOT want to reassign or redefine a global variable, as it can give you some very nasty bugs that are not easy to fix nor find, going back to their extremely easy accessibility.<p></li>
+
+      <li> Class Variables, syntax: @@class_variable
+        <p> Identified by the pair of @@ signs in front of them, class variables are exactly what they sound like: They are accessible by any instance of a class. Like global variables, these are fairly uncommon variables, because of the effect that they have on inheritance. Remember, every subclass of a class is going to get class variables.</p></li>
+
+      <li> Instance Variables, syntax: @instance_variable
+        <p> Now we get to a very common variable, the instance variable. These are identified by the single @ sign in front of them, and are accessible only by methods and objects inside a class. This makes instance variables extremely useful, since you can plug them in anywhere in a class and their value is already assigned to them. If you're making a class, chances are very, very good that you are taking advantage of some instance variables.</p></li>
+
+      <li> Local Variables, syntax: local_variable
+        <p> Lastly, in the tightest possible scope, we have the humble local variable. To put things in perspective, global variables are accessible in any scope of Ruby. Class variables are accessible across any instance or subclass of a class. Instance variables are only accessible inside of a single class, and among it's methods and such. Then, local variables are only accessible inside of the method or loop that they have been created. This makes them the most common variable out there, since they are very protected and easy to work with. When you assign a local variable, it is ONLY usable inside of that code block that it is assigned in.</p></li>
+      </ul>
+
+
+</main>
