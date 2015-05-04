@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <title>My DBC Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+
+<main>
+  <h1>Hashes vs. Objects</h1>
+  <h2>A quick look at how Ruby Hashes and Javascript Objects Differ</h2>
+  <h4>May 3rd, 2015</h4>
+
+  <section>
+    This has been a crazy week. I have been feverishly trying to learn as much Javascript as I possibly can, as it has been introduced to us this week in our curriculum. It didn't take very long to see that 'Js' differs in many ways from Ruby. The syntax, the formatting, 'functions' in Js against 'methods' in Ruby..so on and so forth. However, there is one area where these two languages draw a curious parallel to eachother, and that concerns each language's major data structure: hashes in Ruby, and objects in Javascript.
+</section>
+<section> Hashes, in the Ruby language, are data structures that need to components to work: the key, and that key's value. Hashes are very similar to arrays in Ruby, and, while on the subject, nearly identical to arrays in Javascript as well. However, arrays don't really have a 'key' for their values, in the sense that hashes do. Arrays 'keys' are actually their numerical index, which is assigned to each element in an array. So, if you had an array that read [1,2,3], each integers 'key' would be the index number of where they are placed in the array. So, the integer 1 would be index[0], integer 2 would be index[1], and so forth. With hashes, the 'index', if you will, is supplied by the user, and the value of that 'index', or key, is also assigned by the user. They look like this:</section>
+
+<p> colors_numbers = {
+  "blue" => 1,
+  "red" => 2,
+  "yellow" => 3
+  }</p>
+
+<section> In the above example, you can see our structure for a Ruby hash. The colors, denoted as strings(in quotes) are the keys. After the key-value symbol is each key's value, which in this example are just integers. Say you wanted to get the value of one of the keys. You would do this: colors_numbers["blue"]. This would return you the value for the key "blue", which would be 1. In Ruby, hashes are used to store data, and are extremely useful because they are given unique keys for each value, and can be called as such. Now, let's look at what an object looks like in Javascript.</section>
+
+<p> var colors_numbers = {
+  blue: 1,
+  red: 2,
+  yellow: 3
+  }</p>
+
+<section> Okay, let's have a closer look here. In a Javascript object, we must first denote the object by calling it a variable, or 'var'. Then, we use the equal sign and the curly brackets to wrap the object, similar to hashes in Ruby. However, that's pretty much where the similarities end. As opposed to your keys in Ruby, what we call them here are properties. Properties do not need to be turned into strings, as you can see, and we assign properties values by using the colon and following it with, well, whatever you want the property's value to be(the values do need to be strings, if they aren't integers). The other cool thing that I have learned about Js objects to this point is that you can place other cool things in them, like full on functions(which would be called methods in Ruby). When this is brought into account, Js objects take on a complexion that bears resemblances to a Ruby class, but that's another blog post waiting to happen!</section>
+</main>
