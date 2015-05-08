@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="cheat-sheet-stylesheet.css"
+
+
+</head>
+
+<main>
+
+
+
+<h1>Javascript Objects</h1>
+
+
+<section>
+
+<div id="div1">
+    <p>
+    Javascript is a cross-platform, object-oriented scripting language invented in web browswers to make web pages more dynamic and give feedback to your user. Adding JavasScript to your HTML code allows you to change completely the document appearance, from changing text, to changing colors, or changing the options available in a drop-down list, or switching one image with another when you roll your mouse over it.</p>
+
+    <p>JS is mainly used as a client side scripting language. This means that all the action occurs on the client's side of things. When a user requests an HTML page with JS, the script is sent to the browser and it's up to the browswer to do something with it. JS is often used to perform operations that would otherwise encumber the server, like form input validation. </p>
+
+    <p>JS is supported by many popular web browswers including internet explorer and netscape navigator. One advantage of JS is an ability to get info about the browswer and HTML page. This access to info gives JS great power to modify the browsing experience.
+    </p>
+</div>
+
+<div>
+
+<h2>Syntax for creating new objects</h2>
+  <ul>
+  <pre>
+    <li> x = new Object()</li>
+    <li> x = {}</li>
+    <li>var object = {}</li>
+    <li>obj.name = "John"</li>
+</pre>
+  </ul>
+
+</div>
+
+<div>
+
+
+  <pre>
+   var colors = {color1:"blue",color2:"yellow",color3:"red"} <br>
+   var colors = {} <br>
+   colors.color1 = "blue" <br>
+   colors.color2 = "yellow" <br>
+   colors.color3 = "red" <br></pre>
+
+
+</div>
+
+<div>
+
+    <pre>
+    var menu = { <br>
+    width: 300, <br>
+    height: 200, <br>
+    title: "Menu", <br>
+    }; <br>
+
+    for(var key in menu) { <br>
+      var val = menu[key]; <br>
+    } <br>
+
+    for(var key in mneu) { <br>
+      var val = menu[key]; <br>
+    } <br>
+
+      alert ("Key: "+key+" value:"+val); <br> </pre>
+
+
+
+  </div>
+
+
+  <div>
+
+  <h3>Instead of writing:</h3> <br>
+
+
+
+    <pre>
+    text += cars[0] + ""; <br>
+    text += cars[1] + ""; <br>
+    text += cars[2] + ""; <br>
+    text += cars[3] + ""; <br>
+    text += cars[4] + ""; <br>
+    text += cars[5] + ""; <br></pre>
+
+  </div>
+
+  <div>
+
+    <h3>We could write:</h3> <br>
+
+    <pre>for (i = 0; i < cars.length; i++) { <br>
+    text += cars[i] + ""; <br>
+    } <br>
+
+    var user = { <br>
+    name = "Guest" <br>
+    askName:function() { <br>
+    this.name = prompt("Your name?") <br>
+    }, <br>
+    sayHi: function() { <br>
+    alert("Hi, my name is" + this.name) <br>
+    } <br>
+    } <br>
+
+    user.askName() <br>
+    user.sayHi() <br></pre>
+
+
+</div>
+
+
+ </section>
+
+  </main>
+</html>
+
