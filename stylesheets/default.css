@@ -1,29 +1,71 @@
 .one {
-  text-align: center;
+  margin-top: px;
+  width: 33%;
+  float: left;
+  color: white;
 }
 
 .two {
-  margin-left: 250px;
-  margin-right: 250px;
+  width: 218px;
+  height: 323px;
+  margin-left: 850px;
+  margin-top: 125px;
+  border:1px solid white;
+
 }
 
 .three {
-  margin-left: 600px;
-  display: inline-block;
+  margin-top: 100px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding-bottom: 15px;
+}
+
+.four {
+  margin-top:30px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.five {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
 }
 
 
 html {
   background-color: teal;
-  font-family: Verdana;
-  color: brown;
+  font-family: Courier;
+  color: white;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 
 a:hover {
   color: red;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-left: 5%;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+section {
+  background-image: url("http://th09.deviantart.net/fs70/PRE/f/2013/256/9/c/49ers_wallpaper_by_ideal27-d6m2xii.jpg");
+  height:660px;
 }
